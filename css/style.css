@@ -1,0 +1,758 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@400;700&display=swap');
+
+
+*{
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+
+html,body{
+    overflow-x: hidden;
+}
+
+/* navbar start */
+
+ul li{
+list-style-type: none;
+padding: 0px 10px;
+}
+
+ul li a{
+text-decoration: none;
+}
+
+h1{
+font-size: 50px;
+}
+h2{
+font-size: 40px;
+border-left: 5px solid var(--backLight);
+}
+
+h3{
+font-size: 35px;
+}
+
+h4{
+font-size: 30px;
+}
+
+h5{
+font-size: 25px;
+}
+
+p{
+    font-size: 20px;
+}
+:root{
+--backColor:rgb(31, 240, 66);
+}
+
+:root{
+--backLight:rgb(205, 0, 0);
+}
+:root{
+--textColor:white;
+}
+
+:root{
+--blackClor:black;
+}
+
+.lightColor{
+background-color: var(--backLight) !important;
+}
+
+.section-p1{
+
+padding: 20px 80px;
+}
+
+.section-m1{
+margin: 80px 0px;
+}
+
+.hambar {
+
+position: absolute;
+top: 0;
+right: 0;
+padding: 5px;
+cursor: pointer;
+display:none;
+z-index: 102;     
+}
+.hambar i{
+font-size: 30px;
+cursor: pointer;
+margin: 10px;
+color:var(--backColor);
+z-index: 150;  
+
+
+}
+
+i[id="open-bar"]{
+display: block;
+
+
+}
+i[id="close-bar"]{
+display: none;
+}
+
+
+
+
+.navigation{
+background-color: var(--textColor);
+color: var(--backColor);
+
+}
+
+.leftNav img{
+width: 50px;
+background-color: var(--backLight);
+padding: 10px;
+}
+.leftNav-mini{
+display: none;
+
+}
+.leftNav span{
+    color: var(--backLight);
+    font-size: 30px;
+}
+.rightNav ul li{
+position: relative;
+font-size: 22px;
+}
+.rightNav .toggle{
+display: none;
+}
+.rightNav ul li a{
+color: var(--backColor);
+padding: 10px 20px;
+}
+.rightNav ul li a:hover{
+background-color: var(--backColor);
+color: var(--textColor);
+
+}
+
+.rightNav ul li:hover >ul{
+display: block;
+
+}
+.rightNav ul ul{
+position: absolute;
+width: 100%;
+height: 100%;
+left: -22px;
+display: none;
+}
+
+.rightNav ul ul li{
+width: 200px;
+background-color: var(--backColor);
+display: list-item;
+position: relative;
+padding-top: 10px;
+float: none; 
+z-index: 80;
+}
+
+.rightNav ul ul li a{
+
+color: var(--textColor);
+}
+
+.rightNav ul li a.active{
+
+background-color: var(--backColor);
+color: var(--textColor);
+
+}
+
+
+/* NAVIGATION  TOP END */
+
+/* CAROUSEL START */
+.carousel-item img{
+width: 100%;
+height: 85vh;
+}
+
+/* CAROUSEL END */
+
+.fun-section{
+position: relative;
+top: -100px;
+}
+.box{
+background-color: var(--backColor);
+color: var(--textColor);
+z-index: 10;
+
+}
+.single-icon i{
+font-size: 100px;
+padding-top: 10px;
+
+}
+
+.text-box a i{
+color: var(--textColor);
+font-size: 30px;
+}
+
+
+
+
+/* HEADER SECTION ALL END */
+
+
+/* SECTION1 START*/
+
+
+.sm-icon i{
+font-size: 60px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--backColor);
+    color: var(--textColor);
+position: relative;
+right: 10px;
+padding: 20px 0px 0px 20px;
+
+
+}
+
+
+/* SECTION 1 END */
+
+/* .card:hover */
+
+.card{
+border-bottom: 10px solid var(--backColor);
+}
+
+.card:hover{
+background-color:var(--backColor);
+color: var(--textColor);
+}
+
+.icons-layer a i{
+border: 2px solid var(--textColor);
+background-color: var(--backColor);
+color: var(--textColor);
+padding: 5px;
+font-size: 30px;
+}
+.icons-layer{
+opacity: 0;
+width: 100%;
+bottom: 0;
+position: absolute;
+transition: 0.5s;
+
+}
+.card:hover .icons-layer{
+opacity: 1;
+bottom: 50%;
+
+}
+.glider-prev,.glider-next{
+background-color:var(--backColor);
+color: var(--textColor);
+position: relative;
+top: 0;
+left: 90%;
+padding: 5px 10px;
+margin-bottom: 10px;
+
+}
+
+
+
+
+/* SECTION 2 END */
+
+
+.single-button{
+color: white;
+position: absolute;
+top: 0;
+right: 0;
+padding: 10px;
+font-size: 20px;
+}
+.single-button .fa-minus{
+display: none;
+
+}
+.show-text .fa-minus{
+display: block;
+}
+.show-text .fa-plus{
+display: none;
+}
+.questions{
+    background-color: var(--backColor);
+}
+.question{
+position: relative;
+padding-right:50px;
+background-color:var(--backColor);
+color: var(--textColor);
+border: 1px solid var(--textColor);
+border-radius: 10px;
+}
+.question i{
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid white;
+}
+.dp .fa-user{
+    color: var(--backColor);
+    background-color: var(--textColor);
+    font-size: 30px;
+
+}
+.ans-box{
+display: none;
+}
+.show-text .ans-box{
+display: block;
+}
+
+
+.section4 ul li{
+    font-size: 25px;
+    
+}
+
+
+.address input{
+width: 100%;
+height: 7vh;
+}
+
+.address button{
+margin-left: 30px;
+margin-top: 10px;
+background-color: var(--backColor);
+color: var(--textColor);
+}
+.address i{
+    background-color: var(--backColor);
+    color: var(--textColor);
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+/* SECTION4 END */
+
+/* FOOTER START */
+
+
+
+footer{
+    background-color:var(--backColor) ;
+    color: var(--textColor);
+    }
+    
+    .logos{
+    border-bottom: 1px solid  gray;
+    padding: 2% 0px;
+    margin: 2% 0px;
+    }
+    
+    #logo{
+    padding-right: 11%;
+    border-right: 2px solid gray;
+    
+    }
+    
+    .address i{
+    padding: 10px;
+    font-size: 32px;
+    position: relative;
+    left: -10px;
+    }
+    
+    .flex-div ul ,li a{
+    color: white;
+    font-size: 20px;
+    
+    }
+    
+    .flex-div{
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    left: -30px;
+    
+    }
+    
+    .copyright{
+    background-color: rgb(84, 179, 147);
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    }
+    
+    .actives i[id="open-bar"]{
+    display: none;
+    
+    
+    }
+    .actives  i[id="close-bar"]{
+    display:block;
+    }
+    
+    .actives .navbar-main{
+    height: 100vh;
+    }
+
+/* FOOTER END */
+
+
+
+/* Media quary start */
+
+@media(max-width:992px){
+
+    h1{
+        font-size: 45px;
+        }
+        h2{
+        font-size: 35px;
+        }
+        
+        h3{
+        font-size: 30px;
+        }
+        
+        h4{
+        font-size: 25px;
+        }
+        
+        h5{
+        font-size: 20px;
+        }
+
+         p{
+            font-size: 15px;
+         }
+
+
+
+
+
+
+    .hambar{
+        display: block;
+       
+    }
+    .hambar i{
+        font-size: 30px;
+        cursor: pointer;
+        margin: 10px;
+        z-index: 200;  
+        
+        
+        }
+    i[id="open-bar"]{
+        display: block;
+        color: var(--backColor);
+        
+        
+        }
+        i[id="close-bar"]{
+        display: none;
+        color: var(--textColor);
+        }
+        
+
+    .actives .rightNav{
+        display: block;
+    }
+    .rightNav{
+        background-color: var(--backLight);
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index:79;
+        display: none;
+        border: 1px;
+        
+        
+    }
+    .actives .leftNav-mini{
+        display: block;
+        z-index: 100;
+        position: relative;
+            left: 20%;
+            padding: 14px 0px;
+            font-size: 30px;
+            color: var(--textColor);
+    }
+    .leftNav-mini img{
+        width:100px;
+        
+        background-color: var(--backColor);
+    
+    }
+    .rightNav ul li{
+        
+        display: flex;
+        flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 400px;
+            top: 150px;
+            margin: auto;
+            font-size: 22px;
+
+    
+        }
+        .rightNav .toggle{
+            display: block;
+            position:absolute; 
+            cursor: pointer;
+            font-size: 30px;
+            right:0;
+            padding: 5px;
+            top: 0;
+        }
+        
+        .rightNav ul li a{
+        color: var(--backColor);
+        padding: 10px 20px;
+        width: 400px;
+        background-color:var(--backColor);
+        color: var(--textColor);
+        position: relative;
+        margin: 5px;
+        }
+
+
+        .rightNav ul li a:hover{
+            background-color:white;
+            color: black;
+            
+            }
+            
+            .rightNav ul li:hover >ul{
+            display: block;
+            
+            
+    
+            
+            }
+            .rightNav ul ul{
+            
+            color: black;
+            width: 400px;
+            height: 100%;
+            left: 0;           
+            display: none;
+
+    
+            }
+            .rightNav ul ul li:hover{
+                position: relative;
+            background-color:white;
+            }
+            .rightNav ul ul li{
+            width: 400px;
+            background-color: var(--backColor);
+            display: list-item;
+            position: relative;
+            border: 1px solid var(--textColor);
+            top: -30%;
+            left: -31px;
+
+            float: none; 
+            z-index: 80;
+            }
+            
+            .rightNav ul ul li a{
+            
+            color: var(--textColor);
+            }
+            
+            .rightNav ul li a.active{
+            
+            background-color: var(--textColor);
+            color: var(--blackClor);
+            
+            }
+
+}
+
+
+@media(max-width:500px){
+
+
+
+    h1{
+        font-size: 30px;
+        }
+        h2{
+        font-size: 20px;
+        }
+        
+        h3{
+        font-size: 15px;
+        }
+        
+        h4{
+        font-size: 15px;
+        }
+        
+        h5{
+        font-size: 15px;
+        }
+        p{
+            font-size: 13px;
+        }
+
+
+
+
+
+    .actives .leftNav-mini{
+        display: block;
+        z-index: 100;
+        position: relative;
+            left: 20%;
+            padding: 14px 0px;
+            font-size: 20px;
+            color: var(--textColor);
+    }
+    .leftNav-mini img{
+        width:50px;
+        
+        background-color: var(--backColor);
+    
+    }
+
+    .rightNav ul li{
+        display: flex;
+        flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 200px;
+            top: 100px;
+            margin: auto;
+            font-size: 22px;
+
+    
+        }
+        .rightNav .toggle{
+            display: block;
+            position:absolute; 
+            cursor: pointer;
+            font-size: 30px;
+            right:0;
+            padding: 5px;
+            top: 0;
+        }
+        
+        .rightNav ul li a{
+        color: var(--backColor);
+        padding: 10px 20px;
+        width: 200px;
+        background-color:var(--backColor);
+        color: var(--textColor);
+        position: relative;
+        margin: 5px;
+        }
+
+
+        .rightNav ul li a:hover{
+            background-color:white;
+            color: black;
+            
+            }
+            
+            .rightNav ul li:hover >ul{
+            display: block;
+            
+            
+    
+            
+            }
+            .rightNav ul ul{
+            
+            color: black;
+            width:200px;
+            height: 100%;
+            left: 0;           
+            display: none;
+
+    
+            }
+            .rightNav ul ul li:hover{
+                position: relative;
+            background-color:white;
+            }
+            .rightNav ul ul li{
+            width: 200px;
+            background-color: var(--backColor);
+            display: list-item;
+            position: relative;
+            border: 1px solid var(--textColor);
+            top: -30%;
+            left: -31px;
+
+            float: none; 
+            z-index: 80;
+            }
+            
+            .rightNav ul ul li a{
+            
+            color: var(--textColor);
+            }
+            
+            .rightNav ul li a.active{
+            
+            background-color: var(--textColor);
+            color: var(--blackClor);
+            
+            }
+
+
+
+
+            .glider-prev,.glider-next{
+                background-color:var(--backColor);
+                color: var(--textColor);
+                position: relative;
+                top: 0;
+                left: 20%;
+                padding: 5px 10px;
+                margin-bottom: 10px;
+                
+                }
+}

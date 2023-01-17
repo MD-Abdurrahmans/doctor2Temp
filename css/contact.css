@@ -1,0 +1,25 @@
+
+
+
+.top-news-nav{
+    background-color: var(--backColor);
+    color: var(--textColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.half-width ul li{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+/* top-news nav end */
+
+.btn-form button{
+    background-color: var(--backColor);
+    color: var(--textColor);
+}
+
+
